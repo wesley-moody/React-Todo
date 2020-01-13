@@ -1,0 +1,33 @@
+.done {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+p {
+  color: rgb(135, 212, 207);
+  background-color: rgb(37, 3, 8);
+  height: 3rem;
+  font-size: 1.8rem;
+}
+
+p:hover {
+  cursor: pointer;
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+button {
+  background-color: rgb(37, 3, 8);
+  border-radius: 12%;
+  margin: 2.5px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+}
+
+.todo-list {
+  background-color: rgb(37, 3, 8);
+}

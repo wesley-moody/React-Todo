@@ -1,15 +1,16 @@
 import React from "react";
 import TodoList from "./components/TodoComponents/TodoList";
-import Todo from "./components/TodoComponents/Todo";
 import TodoForm from "./components/TodoComponents/TodoForm";
+import Todo from "./components/TodoComponents/Todo";
+
 const data = [
   {
-    task: 'Organize Garage',
+    task: "Organize Garage",
     id: 1528817077286,
     completed: false
   },
   {
-    task: 'Bake Cookies',
+    task: "Bake Cookies",
     id: 1528817084358,
     completed: false
   }
@@ -20,7 +21,7 @@ class App extends React.Component {
   // design `App` to be the parent component of your application.
   // this component is going to take care of state, and any change handlers you need to work with your state
 
-  constructor(){
+  constructor() {
     super();
     this.state = {
       things: data // there is a property called things that has an initial state of data
@@ -58,7 +59,6 @@ class App extends React.Component {
     });
   };
 
-
   render() {
     return (
       <div>
@@ -66,6 +66,7 @@ class App extends React.Component {
         <h2>Todo List</h2>
         <TodoForm addItem={this.addItem} clearDone={this.clearDone} />
         <TodoList toggleDone={this.toggleDone} things={this.state.things} />
+        {/* <Todo /> */}
       </div>
     );
   }

@@ -6,7 +6,6 @@ class TodoForm extends Component {
   // set the value of "this.state.newItem" to an empty string
   constructor() {
     super();
-    // const [newItem, setNewItem] = useState('');
     this.state = {
       newItem: ""
     };
@@ -38,7 +37,6 @@ class TodoForm extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          {/* This is an uncontrolled component We want it to be controlled by state */}
           <label htmlFor='item'>New Task: </label>
           <input
             type='text'
@@ -49,7 +47,9 @@ class TodoForm extends Component {
             onChange={this.handleChanges}
           />
           <button>Add Todo</button>
-          <button className='clear' onClick={this.props.clearDone}>
+          <button 
+          className='clear' 
+          onClick={this.props.clearDone}>
             Clear Completed
           </button>
         </form>
